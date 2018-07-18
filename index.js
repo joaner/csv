@@ -1,5 +1,7 @@
 /**
- * string to array
+ * multi-line csv to collections
+ * @param {string[]} lines
+ * @return {Array}
  */
 function parse(lines) {
     return lines.map(line => {
@@ -17,7 +19,9 @@ function parse(lines) {
 }
 
 /**
- * array to string
+ * collections to multi-line csv
+ * @param {Array} rows
+ * @return {string[]}
  */
 function stringify(rows) {
     return rows.map(row => {
